@@ -1,37 +1,21 @@
-class Login extends React.Component {
+class Aviso extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            status:1
+        logado: true
         }
-        this.ativar = this.ativar.bind(this)
-        this.desativar = this.desativar.bind(this)
     }
 
-    ativar(){
-        this.setState({status:1})
-    }
-    desativar(){
-        this.setState({status:0})
-    }
     render(){
-
-        let statusMsg;
-        let statusBtn;
-        
-        if(this.state.status == 1){
-            statusMsg = 'Ativado';
-            statusBtn = <button onClick = {this.desativar}>Deativar</button>
-        } else {
-            statusMsg = 'Desativado';
-            statusBtn = <button onClick = {this.ativar}>Ativar</button>
-        }
-
-
         return(
             <div>
-                <p>Status:{statusMsg}</p>
-                {statusBtn}
+                {this.state.logado == true &&
+                    <p>Você está logado</p>
+                }
+                {this.state.logado == false &&
+                    <p>Você não está logado</p>
+
+                }
             </div>
         )
     }
@@ -39,7 +23,7 @@ class Login extends React.Component {
 
 let elemento = (
     <div>
-        <Login/>
+        <Aviso/>
     </div>
 )
 
@@ -47,3 +31,46 @@ ReactDOM.render(
     elemento, 
     document.getElementById("app")
 )
+
+/* TIPOS DE CONDICIONAIS INLINE 
+
+*1
+
+constructor(props){
+        super(props)
+        this.state = {
+        msg: [1,2,3,4,5,6,7,8,9]
+        }
+    }
+
+    render(){
+        return(
+            <div>
+            {this.state.msg.length > 0 && 
+                <h2>Você possui {this.state.msg.length} mensagens não lidas</h2>
+            }
+                
+            </div>
+        )
+    }
+
+*2 
+
+class Aviso extends React.Component {
+    constructor(props){
+        super(props)
+        this.state = {
+        logado: false 
+        }
+    }
+
+    render(){
+        return(
+            <div>
+                O usuário {this.state.logado ? '' : 'não'} está logado
+            </div>
+        )
+    }
+}
+
+*/
