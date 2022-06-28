@@ -1,21 +1,41 @@
+class Post extends React.Component {
+    render (){
+        return (
+            <div>
+                <h4>{this.props.titulo}</h4>
+                <p>{this.props.corpo}</p>
+                <hr/>
+            </div>
+        )
+    }
+}
+
+
 class Aviso extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-        logado: true
+            posts:[
+                {id: 1, titulo: 'Título do Post 1', corpo: 'Corpo do Post 1'},
+                {id: 2, titulo: 'Título do Post 2', corpo: 'Corpo do Post 2'},
+                {id: 3, titulo: 'Título do Post 3', corpo: 'Corpo do Post 3'},
+                {id: 4, titulo: 'Título do Post 4', corpo: 'Corpo do Post 4'},
+                {id: 5, titulo: 'Título do Post 5', corpo: 'Corpo do Post 5'},
+
+            ]
         }
     }
 
     render(){
+
+        let lista = this.state.posts.map((item)=>{
+            return (
+                <Post key={item.id} titulo={item.titulo} corpo={item.corpo} />
+            )
+        })
         return(
             <div>
-                {this.state.logado == true &&
-                    <p>Você está logado</p>
-                }
-                {this.state.logado == false &&
-                    <p>Você não está logado</p>
-
-                }
+                {lista}
             </div>
         )
     }
