@@ -1,38 +1,45 @@
-class Pessoa extends React.Component{
+class Login extends React.Component {
     constructor(props){
-        super(props);
+        super(props)
         this.state = {
-            nome: this.props.nome
+            status:1
+        }
+        this.ativar = this.ativar.bind(this)
+        this.desativar = this.desativar.bind(this)
+    }
+
+    ativar(){
+        this.setState({status:1})
+    }
+    desativar(){
+        this.setState({status:0})
+    }
+    render(){
+
+        let statusMsg;
+        let statusBtn;
+        
+        if(this.state.status == 1){
+            statusMsg = 'Ativado';
+            statusBtn = <button onClick = {this.desativar}>Deativar</button>
+        } else {
+            statusMsg = 'Desativado';
+            statusBtn = <button onClick = {this.ativar}>Ativar</button>
         }
 
-        this.limparNome = this.limparNome.bind(this)
-        this.setNome = this.setNome.bind(this)
-    }
 
-    limparNome(){
-        this.setState({nome:''})
-    }
-
-    setNome(nome){
-        this.setState({nome})
-    }
-
-    render () {
-        return (
+        return(
             <div>
-                <h1>Olá meu nome é {this.state.nome}</h1>
-                <button onClick={this.limparNome}>Limpar Nome</button>
-                <button onClick={() => {this.setNome('Joao')}}>Mudar nome para João</button>
+                <p>Status:{statusMsg}</p>
+                {statusBtn}
             </div>
         )
     }
 }
 
-
-
 let elemento = (
     <div>
-        <Pessoa nome="Bonieky"/>
+        <Login/>
     </div>
 )
 
