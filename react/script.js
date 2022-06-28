@@ -1,15 +1,14 @@
-let nome = 'Antonio'
-let sobrenome = 'Lacerda'
+//let elemento = <h1 className="titulo">Olá Mundo</h1>
 
-let titulo = <h2>{nome}</h2>
+/*
+let elemento = React.createElement(
+    'h1',
+    {className:'titulo'},
+    'Olá Mundo 2.0',
+);
+*/
 
-let elemento = {
-    <div>
-        {titulo}
-        <p>{sobrenome}</p>
-        <small>Seja Bem Vindo</small>
-    </div>
-}
+let elemento = <h1 className="titulo">Olá Mundo 3.0</h1>
 
 ReactDOM.render(
     elemento,
