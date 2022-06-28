@@ -1,41 +1,38 @@
-class Relogio extends React.Component {
-
+class Pessoa extends React.Component{
     constructor(props){
-        super(props)
+        super(props);
         this.state = {
-            hora:'00:00:00'
-        };
+            nome: this.props.nome
+        }
 
-    }
-    
-    componentDidMount(){
-        this.timer = setInterval(()=>{
-            this.setState({hora:new Date().toLocaleDateString()})
-        }, 1000)
+        this.limparNome = this.limparNome.bind(this)
+        this.setNome = this.setNome.bind(this)
     }
 
-    componentDidUpdate(){
-        console.log('Componente foi atualizado')
+    limparNome(){
+        this.setState({nome:''})
     }
 
-    componentWillUnmount(){
-        clearInterval(this.timer)
+    setNome(nome){
+        this.setState({nome})
     }
 
-    render(){
-        return(
+    render () {
+        return (
             <div>
-                <h1>Horário</h1>
-                <h2>{this.state.hora}</h2> 
+                <h1>Olá meu nome é {this.state.nome}</h1>
+                <button onClick={this.limparNome}>Limpar Nome</button>
+                <button onClick={() => {this.setNome('Joao')}}>Mudar nome para João</button>
             </div>
         )
     }
 }
 
 
+
 let elemento = (
     <div>
-        <Relogio/>
+        <Pessoa nome="Bonieky"/>
     </div>
 )
 
