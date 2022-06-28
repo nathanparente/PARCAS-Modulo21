@@ -6,11 +6,21 @@ class Relogio extends React.Component {
             hora:'00:00:00'
         };
 
-        setInterval(()=>{
+    }
+    
+    componentDidMount(){
+        this.timer = setInterval(()=>{
             this.setState({hora:new Date().toLocaleDateString()})
         }, 1000)
     }
 
+    componentDidUpdate(){
+        console.log('Componente foi atualizado')
+    }
+
+    componentWillUnmount(){
+        clearInterval(this.timer)
+    }
 
     render(){
         return(
