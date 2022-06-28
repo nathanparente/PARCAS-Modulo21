@@ -1,14 +1,21 @@
-function mostrarHora(){
-    let elemento = (
+function BemVindo(){
+    return (
         <div>
-            <h1>Bom dia</h1>
-            <h3>Agora são: {new Date().toLocaleDateString()} </h3>
+            <h1>Seja Bem Vindo</h1>
+            <h2>{props.nome} ({props.idade} anos)</h2>
         </div>
-    )
-    
-    ReactDOM.render(
-        elemento,document.getElementById("app")
     )
 }
 
-setInterval(mostrarHora, 1000)
+let elemento = (
+    <div>
+        <BemVindo nome="Nathan" idade="20"/>
+        <hr/>
+        <BemVindo nome="Bonieky" idade="99"/>
+    </div>
+)
+
+ReactDOM.render(
+    elemento, 
+    document.getElementById("app")
+)
