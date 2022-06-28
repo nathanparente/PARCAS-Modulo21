@@ -1,49 +1,34 @@
-class Post extends React.Component {
-    render (){
-        return (
-            <div>
-                <h4>{this.props.titulo}</h4>
-                <p>{this.props.corpo}</p>
-                <hr/>
-            </div>
-        )
-    }
-}
-
-
-class Aviso extends React.Component {
+class Login extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            posts:[
-                {id: 1, titulo: 'Título do Post 1', corpo: 'Corpo do Post 1'},
-                {id: 2, titulo: 'Título do Post 2', corpo: 'Corpo do Post 2'},
-                {id: 3, titulo: 'Título do Post 3', corpo: 'Corpo do Post 3'},
-                {id: 4, titulo: 'Título do Post 4', corpo: 'Corpo do Post 4'},
-                {id: 5, titulo: 'Título do Post 5', corpo: 'Corpo do Post 5'},
-
-            ]
+            email:"teste@gmail.com",
+            texto:"texto qualquer",
+            sexo:"feminino"
         }
     }
 
     render(){
-
-        let lista = this.state.posts.map((item)=>{
-            return (
-                <Post key={item.id} titulo={item.titulo} corpo={item.corpo} />
-            )
-        })
         return(
-            <div>
-                {lista}
-            </div>
+            <form method='POST'>
+                <input type="email" name="email" value={this.state.email.toUpperCase()} /><br/><br/>
+                <input type="password" name="senha" /><br/><br/>
+                <textarea name="corpo" value={this.state.texto} ></textarea>
+                <select name="opcoes" value={this.state.sexo}>
+                    <option></option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+
+                </select>
+                <input type="submit" name="enviar" /><br/>
+            </form>
         )
     }
 }
 
 let elemento = (
     <div>
-        <Aviso/>
+        <Login/>
     </div>
 )
 
