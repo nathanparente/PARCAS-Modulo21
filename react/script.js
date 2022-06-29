@@ -1,41 +1,42 @@
-class Botao extends React.Component {
-
-
+class Temperatura extends React.Component {
     render(){
+        let temp = parseFloat(this.props.temp);
+        if(this.props.escala == "f"){
+            temp = (temp * 9 / 5) + 32
+        }
+
+
         return(
-            <button onClick={() => {
-                if(this.props.status === 1){
-                    this.props.funcaoTrocar(0)
-                }else {
-                    this.props.funcaoTrocar(1)
-                }
-            }}>{this.props.status === 1 ? 'DESABILITADO' : 'HABILITADO'}</button>
+            <div>
+                Temperatura em {this.props.escala.toUpperCase()} ----
+                {temp}
+                {this.props.escala == 'c' ? '°C' : '°F'}
+            </div>
         )
     }
 }
-
 
 class App extends React.Component {
 
     constructor(props){
         super(props);
         this.state = {
-            status:1
+            temperatura:20
         }
 
-        this.trocarStatus = this.trocarStatus.bind(this)
+        this.tChange = this.tChange.bind(this)
     }
 
-    trocarStatus(novoStatus){
-        this.setState({status:novoStatus})
+    tChange(e){
+        this.setState({temperatura:e.target.value})
     }
-
 
     render(){
         return(
             <div>
-                <p>{this.state.status === 1 ? 'Habilitado' : 'Desabilitado'}</p>
-                <Botao status={this.state.status} funcaoTrocar={this.trocarStatus}/>
+                <input type="number" value={this.state.temperatura} onChange={this.tChange} />
+                <Temperatura temp={this.state.temperatura} escala="c"/>
+                <Temperatura temp={this.state.temperatura} escala="f"/>
             </div>
         )
     }
