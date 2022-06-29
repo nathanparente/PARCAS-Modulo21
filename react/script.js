@@ -6,21 +6,35 @@ class Login extends React.Component {
             texto:"texto qualquer",
             sexo:"feminino"
         }
+
+        this.emailTrocou = this.emailTrocou.bind(this)
+        this.sexoMudou = this.sexoMudou.bind(this)
+    }
+
+    emailTrocou(e){
+        let novoValor = e.target.value
+
+        this.setState({email:novoValor})
+    }
+
+    sexoMudou(e){
+        this.setState({sexo:e.target.value})
     }
 
     render(){
         return(
             <form method='POST'>
-                <input type="email" name="email" value={this.state.email.toUpperCase()} /><br/><br/>
+                <input type="email" name="email" value={this.state.email} onChange={this.emailTrocou} /><br/><br/>
                 <input type="password" name="senha" /><br/><br/>
                 <textarea name="corpo" value={this.state.texto} ></textarea>
-                <select name="opcoes" value={this.state.sexo}>
+                <select name="opcoes" value={this.state.sexo} onChange ={this.sexoMudou}>
                     <option></option>
                     <option value="masculino">Masculino</option>
                     <option value="feminino">Feminino</option>
 
                 </select>
-                <input type="submit" name="enviar" /><br/>
+                <input type="submit" name="enviar" /><br/><br/>
+                Sexo: {this.state.sexo}
             </form>
         )
     }
