@@ -1,48 +1,48 @@
-
-
-class Moeda extends React.Component {
+class Light extends React.Component {
     render(){
-        let novoValor = parseFloat(this.props.valor);
+        const turnOn = () => {
+            document.getElementById('1').classList.remove("red")
+            document.getElementById('3').classList.add("green")
+        }
 
+        const turnOff = () => {
+            document.getElementById('3').classList.remove("green")
+            let yesYellow = document.getElementById('2').classList.add("yellow")
+            if(yesYellow == yesYellow){
+                setTimeout(() => {
+                    document.getElementById('2').classList.remove("yellow")
+                    document.getElementById('1').classList.add("red")
+                }, 1800)
+            }
+        }
         return(
-            <div>
-                Câmbio em: {this.props.moeda}<br/><br/>
-                {this.props.moeda == "dollar" ? novoValor/5 +' $' : novoValor*5 +' R$'}
-                
+            <div className="background">
+                <div className="semaforo">
+                    <div id='1' className="luz-semaforo"></div>
+                    <br/>
+                    <div id='2' className="luz-semaforo"></div>
+                    <br/>
+                    <div id='3' className="luz-semaforo"></div>
+                    <br/>
+                </div>
+                <div className="area-botao">
+                    <button onClick={turnOn}>Abrir Sinal</button>
+                    <button onClick={turnOff}>Fechar Sinal</button>
+                </div>
             </div>
         )
     }
 }
 
+
+
+
+
 class App extends React.Component {
-
-    constructor(props){
-        super(props);
-        this.state = {
-            valor:5
-        }
-
-        this.vChange = this.vChange.bind(this)
-        this.inputChange = this.inputChange.bind(this)
-    }
-
-    vChange(novoValor){
-        this.setState({valor:novoValor})
-    }
-
-    inputChange(e){
-        this.setState({valor:e.target.value})
-    }
 
     render(){
         return(
-            <div>
-                <h3>Digite o valor para saber o câmbio:</h3>
-                <h4>Valor em Dólar vira Real ; Valor em Real vira Dólar</h4>
-                <input type="number" value={this.state.valor} onChange={this.inputChange}/><br/><br/>
-                <Moeda valor={this.state.valor} moeda="dollar" mudar={this.vChange}/><br/><br/>
-                <Moeda valor={this.state.valor} moeda="real" mudar={this.vChange}/><br/><br/>
-            </div>
+            <Light/>
         )
     }
 }
