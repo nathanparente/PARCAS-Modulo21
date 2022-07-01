@@ -37,19 +37,21 @@ body {
 
 .green {
     background-color:#00ff00;
+    box-shadow:0 0 5em #00ff00;
     
     
 }
 
 .yellow {
     background-color:#FFFF00;
+    box-shadow:0 0 5em #ffff00;
     
     
 }
 
 .red {
     background-color:#FF0000;
-    //transition-duration:2s;
+    box-shadow:0 0 5em #ff0000
 }
 
 
