@@ -3,12 +3,12 @@ const named = require('vinyl-named');
 const webpack = require('webpack-stream');
 
 function html(){
-    return src('src/*.html')
+    return src('src/index.html')
         .pipe(dest('public/'));
 }
 
 function js(){
-    return src('src/assets/js/index.js')
+    return src('src/index.js')
         .pipe(named())
         .pipe(webpack({
             mode:'production',
@@ -25,10 +25,19 @@ function js(){
                                 presets:['@babel/preset-env', '@babel/preset-react']
                             }
                         }
+                    },
+                    {
+                        test:/\.(css|scss)$/,
+                        use:[
+                            "style-loader",
+                            "css-loader",
+                            "sass-loader"
+                        ]
+
                     }
                 ]
             }
         }))
-        .pipe(dest('public/assets/js/'));
+        .pipe(dest('public/'));
 }
 exports.default = parallel(html, js)
