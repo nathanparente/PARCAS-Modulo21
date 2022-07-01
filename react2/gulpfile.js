@@ -1,14 +1,14 @@
-const {src, dest, parallel} = require('gulp');
+const { src, dest, parallel} = require('gulp');
 const named = require('vinyl-named');
 const webpack = require('webpack-stream');
 
 function html(){
-    return ('src/*.html')
+    return src('src/*.html')
         .pipe(dest('public/'));
 }
 
 function js(){
-    return('src/js/index.js')
+    return src('src/assets/js/index.js')
         .pipe(named())
         .pipe(webpack({
             mode:'production',
@@ -30,5 +30,5 @@ function js(){
             }
         }))
         .pipe(dest('public/assets/js/'));
-
 }
+exports.default = parallel(html, js)
