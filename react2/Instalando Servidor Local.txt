@@ -1,0 +1,73 @@
+O que é servidor local?
+
+Servidor local é um dispositivo, geralmente um computador com alto poder de processamento e capacidade de armazenamento, 
+que está localizado fisicamente nas instalações da empresa (ou residência) e atende requisições de um cliente 
+na rede local ou LAN.
+
+Esses servidores podem também estar conectados à internet, prestando algum tipo de serviço como acesso aos programas 
+e dados a colaboradores que fazem trabalho remoto.
+
+A melhor forma de fazer seus projetos e testes, ou aprender desenvolvimento web, é usando um servidor local.
+
+Dessa forma, você vai poder testar seus projetos na sua máquina e, quando estiver pronto, é só fazer o deploy 
+para um servidor online (como os da Weblink, Hostinger, Digital Ocean, etc.)
+
+Neste tutorial, você vai ver como configurar uma instalação local do Apache, MySQL e PHP, e algumas ferramentas de produtividade, 
+como o Git e o NPM. Vamos usar o XAMPP, para fazer isso.
+
+Antes de Começar
+Para montar o seu ambiente de desenvolvimento, você precisará fazer alguns downloads:
+
+1 - Baixe o XAMPP
+2 - Baixe o Git
+3 - Baixe um Editor de Textos (recomendo o Atom ou o VS Code)
+4 - Baixe o Node.js
+
+Os passos desse tutorial são feitos para ambientes Windows, mas podem servir, também, para Linux.
+
+Instale o XAMPP
+
+O XAMPP é um pacote com softwares livres que executam um Servidor Web, porém em menor escala e sem as configurações de segurança. 
+Por ser menor, ele é perfeito para instalar no PC.
+
+Para começar o seu server você já pode instalar o XAMPP.
+
+A instalação é simples, como qualquer outro programa (Next, Next, Finish). Não há necessidade de modificar o setup padrão.  
+Então, não vou me ater muito a estes passos.
+
+O XAMPP funciona, principalmente, com o Apache, como Servidor Web, PHP e Perl como linguagens, e o MariaDB para servir os 
+Bancos de Dados (antes era o MySQ).
+
+Com esses itens você pode criar sites e sistemas web do zero, ou instalar um WordPress, Joomla, Drupal, Yii, Laravel, 
+MediaWiki, e vários outros CMS para criar seus sites.
+
+Execute o XAMPP
+
+Após a instalação terminar, execute o XAMPP.
+
+Observe os softwares que o XAMPP tem, e que são interessantes para nós:
+
+Apache – é o servidor web em si. Ele trata as requisições dos sites e sistemas locais;
+
+MariaDB – o gerenciador de banco de dados. É equivalente ao MySQL. Esse é o sistema responsável pelo armazenamento dos dados 
+dos projetos;
+
+PHP – é a linguagem utilizada pelo XAMPP, e roda junto com o Apache.
+
+Inicie o Servidor Web, clique no botão Start, ao lado de Apache.
+
+(Opcional) Inicie também o Banco de Dados, clicando no botão Start, também.
+
+Se o servidor web (Apache) não tiver sido iniciado, você vai ver um erro no browser.
+
+Quando aparecer a legenda verde com o text running o servidor web estará executando. 
+Você pode verificar acessando o endereço http://localhost. Se aparecer a tela do XAMPP, deu tudo certo.
+
+Instale o Git e o Git Bash
+
+Instale um Bom Editor de Textos
+
+Instale o Node.js e o NPM
+
+
+
