@@ -1,0 +1,173 @@
+[33mcommit a51b24ac6e715557bc1a130aaa5afc5292c4af46[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Mon Jul 4 09:15:03 2022 -0300
+
+    Aula30 Instalando Servidor Local
+
+[33mcommit 11a642bf009ed728ac49569a40533a6b88e934dd[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Fri Jul 1 11:32:58 2022 -0300
+
+    Aula29 Estrutura de um projeto (2-2)
+
+[33mcommit 49aa148d27ae5a4fd06ef445a0e47da674d2e7ae[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Fri Jul 1 11:21:44 2022 -0300
+
+    Aula28 Estrutura de um Porjeto (1-2)
+
+[33mcommit 1fbb756516fa71a7f0c41449f72c1d532ffe602e[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Fri Jul 1 11:13:30 2022 -0300
+
+    Aula27 Projeto Pré-Compilado (2-2)
+
+[33mcommit 49ebb58981dbd17eed1a2df2e1ce8579d9375d45[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Fri Jul 1 09:23:00 2022 -0300
+
+    Aula26 Projeto Pré-Compilado (1-2)
+
+[33mcommit 1d875083eb1dfed300a0b60154ae94146b584500[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Fri Jul 1 08:28:31 2022 -0300
+
+    Aula25 Interpretando in Browser vs Pre-Compilado
+
+[33mcommit 52df79b659d5839d0fd8ab8e4f7a96f5350d894e[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Fri Jul 1 08:06:00 2022 -0300
+
+    Aula24 Exercício Tabela com edição via modal
+
+[33mcommit 1f2ccb793114e2cb1e1967c1b7cfdf167c7421c9[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Fri Jul 1 08:04:38 2022 -0300
+
+    Aula23 Exercício Feed do Instagram
+
+[33mcommit dd818216e3455223dc483b900827734adcf04234[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Fri Jul 1 08:03:41 2022 -0300
+
+    Aula22 Exercício To Do com busca
+
+[33mcommit d7318120f82cac0261c7413711ec83e64c050f4c[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Thu Jun 30 16:24:03 2022 -0300
+
+    Aula21 Exercício Sinal de Trânsito
+
+[33mcommit 29afac8074d2bf16954982ca4331681fa328388c[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Wed Jun 29 13:20:32 2022 -0300
+
+    Aula20 Conversor de Moedas Via Dupla
+
+[33mcommit bbe31375e780af58df51d01283ef9de5c7a83dd6[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Wed Jun 29 09:38:10 2022 -0300
+
+    Aula19 Comunicação entre Componentes
+
+[33mcommit e0fb667d9105bf80d1405c9fe40c6ab5dce90399[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Wed Jun 29 09:05:28 2022 -0300
+
+    Aula18 Ações fora do Componente
+
+[33mcommit 5a188f095daba01158f086b6abaa1daf57505926[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Wed Jun 29 08:49:55 2022 -0300
+
+    Aula17 Controlando Formulários Multiplos Inputs
+
+[33mcommit bbd473586c6bb10dd9bab3e578640d82ff113a17[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Wed Jun 29 08:35:00 2022 -0300
+
+    Aula16 Controlando Formulários de Eventos
+
+[33mcommit 11ae01cf114e35656ed5477340f281fc1aabebae[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Tue Jun 28 14:27:23 2022 -0300
+
+    Aula15 Controlando Formulários Valores
+
+[33mcommit 50410e289ca69b5db6b5112c938bef77bbfba7f9[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Tue Jun 28 14:15:14 2022 -0300
+
+    Aula14 Listas
+
+[33mcommit 6aee05f3f0e76136520726164a58558cc0c7b23e[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Tue Jun 28 12:23:51 2022 -0300
+
+    Aula13 Condicional Inline
+
+[33mcommit ae1dece36ea448af22e7101ade9fad141f510452[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Tue Jun 28 12:09:26 2022 -0300
+
+    Aula12
+
+[33mcommit cc9072a2e7d643efdef697a82de7bde0b6b279cd[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Tue Jun 28 11:34:59 2022 -0300
+
+    Aula11
+
+[33mcommit 3bde82ce82f5d2151d587e2bc88a869544fb0428[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Tue Jun 28 11:10:46 2022 -0300
+
+    Aula10
+
+[33mcommit 92e6f335135dca29910e4bdfe5c5e7c43a367038[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Tue Jun 28 10:53:05 2022 -0300
+
+    Aula09
+
+[33mcommit 1f6e9ae7816a806f5c76cbd0cb9fd7b6b59ff3eb[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Tue Jun 28 10:03:21 2022 -0300
+
+    Aula08
+
+[33mcommit 15103f6149e4150ca7ca61a22b7c6644a2d34e3a[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Tue Jun 28 09:41:17 2022 -0300
+
+    Aula07
+
+[33mcommit 368034b2bacdac1d38e4f52d3e1d390760506911[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Tue Jun 28 09:32:24 2022 -0300
+
+    Aula06
+
+[33mcommit 213d3786bf75d024e24984f1992e362b97a9db46[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Tue Jun 28 09:22:15 2022 -0300
+
+    Aula05
+
+[33mcommit 4a49f953622be2453b4ba1a9af18b93ec5e3690e[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Tue Jun 28 09:12:31 2022 -0300
+
+    Aula03
+
+[33mcommit 3ae4c15fc80babffabe347a805f89f048cee851b[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Tue Jun 28 09:07:43 2022 -0300
+
+    Aula02
+
+[33mcommit 0801a925ec60b4ba24260aa2497029f0d53109a8[m
+Author: Nathan Parente <nathan.parente22@gmail.com>
+Date:   Tue Jun 28 08:59:39 2022 -0300
+
+    Aula01
